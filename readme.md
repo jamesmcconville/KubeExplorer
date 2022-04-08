@@ -1,10 +1,10 @@
 # About 
 
-A desktop kubernetes client
+A desktop kubernetes client written in WPF.
 
 
 # Todo
 
-* Create git repo
-* Connect to kuberetes
+* Add a cluster -> store in json
+* Connect to kubernetes
 * Get a list of namespaces - Populate a dropdown

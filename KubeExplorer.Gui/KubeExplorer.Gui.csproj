@@ -9,8 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="KubernetesClient" Version="7.0.15" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KubeExplorer.Common\KubeExplorer.Common.csproj" />
+    <ProjectReference Include="..\KubeExplorer.Interfaces\KubeExplorer.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

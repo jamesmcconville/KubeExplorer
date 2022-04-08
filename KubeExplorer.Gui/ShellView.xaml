@@ -4,9 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KubeExplorer.Gui"
+        xmlns:cluster="clr-namespace:KubeExplorer.Gui.Components.Cluster"
         mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance local:ShellViewModel}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Command="{Binding OpenClusterCommand}" Content="Open Cluster" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <cluster:ClusterView DataContext="{local:DependencyInjectionSource Type=cluster:IClusterViewModel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" />
     </Grid>
 </Window>
